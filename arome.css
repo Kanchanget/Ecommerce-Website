@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Great+Vibes&family=Josefin+Sans&family=Quicksand:wght@500;600&family=Signika&family=Source+Serif+4:ital,wght@0,600;1,600&family=Yeseva+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 100;
+    color: #e49800;
+
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    font-family: 'Yeseva One', sans-serif;
+    font-weight: 100;
+}
+
+h5 {
+    font-weight: 700; 
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-size: 16px; 
+    color: #000;
+    margin: 15px 0 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.section-1 {
+    padding: 35px 80px;
+}
+
+button{
+    font-family: 'Diphylleia', serif;
+}
+
+body{
+    width: 100%;
+}
+
+/*header*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#header .logo,
+#end_logo .logo{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 800;
+    font-size: 40px;
+    background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header .logo span{
+    background-color: #000;
+}
+
+#end_logo .logo span{
+    background-color: #fff;
+}
+
+/* {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 800;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(191, 163, 247), rgba(236,180,238,0.56));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+#header .logo:hover,
+#end_logo .logo:hover{
+    font-size: 42px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 10px;
+    font-family: 'Signika', sans-serif;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgba(34, 164, 245, 0.822);
+}
+
+/* #navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: rgba(34, 164, 245, 0.822);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+} */
+
+/*home*/
+#content{
+    background: url("images/bg3.jpg");
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 200px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+#content h4{
+    color: rgba(34, 164, 245, 0.822);
+    padding-bottom:15px ;
+}
+#content p{
+    color: #fff;
+}
+
+#content button{
+    background: url("images/lg_bg.jpg") no-repeat;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 20px 60px 28px 60px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+
+
+
+li a, .dropdown {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .drop:hover .dropdown {
+  color: rgba(34, 164, 245, 0.822);
+}
+
+li.drop {
+  display: inline-block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sub-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop:hover .sub-menu {
+  display: block;
+}
+
+/* products */
+
+#perfume1{
+    text-align: center;
+}
+#perfume1 h2{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#perfume1 h4{
+    text-align: left;
+    align-items: flex-start;
+    color: #4b4b4d;
+    font-size: 25px;
+}
+
+#perfume1 .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#perfume1 .pro1{
+    width: 200px;
+    min-width: 250px;
+    padding-bottom: 10px;
+    border: 1px solid #d58c1f;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.1s;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#perfume1 .pro1:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.07);
+}
+
+#perfume1 .pro1 img{
+    width: 100%;
+    border-radius: 5px;
+    height: 35vh;
+
+}
+
+#perfume1 .pro1 .details{
+    text-align: start;
+    padding: 10px 0;
+    padding-left: 4px;
+}
+
+#perfume1 .pro1 .details span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#perfume1 .pro1 .details h5{
+    padding: 7px 5px 5px 0;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#perfume1 .pro1 .details i{
+    font-size: 15px;
+    color: #ffc422;
+}
+
+#perfume1 .pro1 .details h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 200;
+}
+#perfume1 .pro1 .cart{
+    font-size: 30px;
+    padding: 3px 5px 0 5px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: #084781;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#perfume1 .pro1 .cart:hover{
+    background-color: #ccd2e7;
+}
+
+/* #banner .n_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+} */
+
+#banner{
+    width: 100%;
+}
+
+#banner h2{
+    color: #000000;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#banner h4{
+    font-size: 30px;
+}
+
+#banner .n_container
+#banner .n_container2{
+    padding-top: 10px;
+}
+
+#banner .n_container .hero{
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}
+
+#banner .n_container2 .hero2{
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+}
+
+#banner .n_container .hero .gallery,
+#banner .n_container2 .hero2 .gallery{
+    width: 100%;
+    position: relative;
+}
+
+#banner .n_container .hero .gallery .image-section,
+#banner .n_container2 .hero2 .gallery .image-section{
+    width: 100%;
+}
+
+#banner .n_container .hero .gallery .image-section img
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 2px;
+    display: block;
+}
+#banner .n_container2 .hero2 .gallery .image-section img{
+    width: 100%;
+    height: 40vh;
+    border: 1px solid #eee;
+    padding: 2px;
+    display: block;
+}
+
+#banner .n_container .hero .gallery .caption,
+#banner .n_container2 .hero2 .gallery .caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(255,255,255,0.5);
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.30s;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#banner .n_container .hero .gallery .caption:hover,
+#banner .n_container2 .hero2 .gallery .caption:hover{
+    opacity: 1;
+}
+
+#miniset{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#miniset .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 60px;
+    text-align: center;
+    background-image: url("images/depositphotos_305696428-stock-photo-flat-lay-composition-with-different.jpg");
+    background-repeat: no-repeat;
+    min-width: 650px;;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#miniset .banner-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 40px;
+    text-align: center;
+    background-image: url("images/bottle-perfume-peony-flowers_114963-12637.avif");
+    background-repeat: no-repeat;
+    min-width: 650px;;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#miniset h4{
+    color: #000000;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#miniset h2{
+    color: #ffffff;
+}
+
+#miniset span{
+    padding-bottom: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+button.black{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #000000;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 0.2s;
+}
+
+#miniset .banner-box:hover button,
+#miniset .banner-box1:hover button{
+    background: #fff;
+    border: 1px solid #fff;
+    transition: 0.1s;
+}
+
+#brand{
+    text-align: center;
+}
+
+#brand .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#brand .pro1{
+    width: 150px;
+    min-width: 160px;
+    padding: 10px 12px;
+    border: 2px solid #cce1e7;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.1s;
+    position: relative;
+}
+
+#brand .pro2{
+    width: 190px;
+    min-width: 160px;
+    padding: 10px 12px;
+    border: 2px solid #cce1e7;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.1s;
+    position: relative;
+}
+
+#brand .pro1:hover,
+#brand .pro2:hover{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.07);
+}
+
+#brand .pro1 img{
+    width: 100%;
+    border-radius: 100px;
+    height: 18vh;
+}
+
+#brand .pro2 img{
+    width: 100%;
+    border-radius: 10px;
+    height: 21vh;
+}
+
+
+
+/* newsletter */
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter .newstext{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#newsletter img{
+    background-color: transparent;
+    width: 120px;
+}
+
+#newsletter h4 {
+    font-size: 22px; 
+    font-weight: 700; 
+    color: #fff;
+    padding-top: 20px;
+}
+    
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+    
+#newsletter p span {
+    color: #ffbd27;
+    }
+    
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newsletter .form { 
+    display: flex;
+    width: 40%;
+    padding-right: 100px;
+}
+
+#newsletter button {
+    width: 6rem;
+    background-color: #f31063; 
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+
+
+/* footer  */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #cdcdcd;
+    padding: 40px 80px;
+    font-family: 'Signika', sans-serif;
+}
+    
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+    
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+    
+footer p{
+    font-size: 13px;
+    margin: 0;
+    padding: 6px;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #171717;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+    
+footer.follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+    
+footer .install img {
+    margin: 10px 15px 0;
+}
+    
+footer .follow i:hover,
+footer a:hover {
+    font-weight: 600;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+#end_logo{
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/*shop page*/
+#shop_page.shop{
+    background-image: url(images/BeautyPros_Retina\ -\ Desktop\ copy-4\ miniset.webp);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#shop_page.about_header{
+    background-image: url(images/about.jpg);
+    color: #fff;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#shop_page.natural{
+    background-image: url(images/nature\ bg.jpeg);
+    color: #fff;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#shop_page.cart{
+    background-image: url(images/pngtree-black-friday-seamless-background-illustration-with-sale-tag-shopping-bag-and-image_407934.jpg);
+    color: #fff;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+    padding-bottom: 50px;
+}
+
+#about_head{
+    display: flex;
+    align-items: center;
+}
+
+#about_head img{
+    width: 50%;
+    height: auto;
+}
+
+#about_head div{
+    padding-right: 60px;
+    
+}
+
+#about_head p{
+    font-size: 20px;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* #banner .ban h4{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #cce1e7;
+}
+
+#banner .n1{
+    align-items:center;
+    cursor: pointer;
+    background-image: url("images/bg\ 5\ woody\ bottle-perfume-flower-on-concrete-260nw-1900224403.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+
+#banner .n2{
+    align-items:center;
+    background-image: url("images/bg\ 4\ SPICY\ BGconcept-natural-perfume-dark-textured-background_185193-73993.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+}
+
+#banner .n3{
+    align-items:center;
+    background-image: url("images/bg\ 3\ just-the-right-touch-of-sweetness-understanding-sweet-perfumes\ bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+
+#banner .n4{
+    align-items:center;
+    background-image: url("images/bg\ 5\ woody\ bottle-perfume-flower-on-concrete-260nw-1900224403.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+}
+
+#banner .n5{
+    align-items:center;
+    background-image: url("images/bg\ 5\ woody\ bottle-perfume-flower-on-concrete-260nw-1900224403.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+} */
